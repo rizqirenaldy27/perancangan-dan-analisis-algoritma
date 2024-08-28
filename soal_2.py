@@ -5,10 +5,8 @@ arrive_time = datetime.strptime("12:15:10", "%H:%M:%S")
 
 trip_duration = arrive_time - departure_time
 
-# Ekstrak jam, menit, dan detik dari durasi perjalanan
 hour = trip_duration.seconds // 3600
 minute = (trip_duration.seconds % 3600) // 60
 second = trip_duration.seconds % 60
 
-# Cetak hasil
 print(f"Waktu yang dihabiskan dalam perjalanan: {hour} jam, {minute} menit, {second} detik.")
